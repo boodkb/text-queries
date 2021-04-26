@@ -1,0 +1,17 @@
+cabal-version: 1.12
+
+name:           query-app
+version:        0.0.0
+build-type:     Simple
+
+executable query-app
+  main-is: Main.hs
+  hs-source-dirs:
+      src
+  ghc-options: -threaded -rtsopts
+  build-depends:
+      base >=4.7 && <5
+    , query
+    , text
+    , io-streams
+  default-language: Haskell2010
